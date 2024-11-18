@@ -1,0 +1,12 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": ["config:recommended"],
+	"assignees": ["ifuenteromero"],
+	"packageRules": [
+		{
+			"matchUpdateTypes": ["minor", "patch"],
+			"automerge": true
+		}
+	],
+	"prTitle": "Update {{ depName }} from {{ currentVersion }} to {{ newVersion }}"
+}
